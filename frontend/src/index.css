@@ -1,0 +1,85 @@
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+
+
+.wider-modal {
+  max-width: 800px; /* Adjust to desired width */
+}
+
+@media (max-width: 768px) {
+  .wider-modal {
+    max-width: 100%;
+  }
+}
+
+
+
+/* Skeleton Loader Styles */
+.skeleton {
+  display: block;
+  background: #f0f0f0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-text {
+  background: #e0e0e0;
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+.skeleton-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px auto;
+  background: #e0e0e0;
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+.skeleton-badge {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 10px auto;
+  background: #e0e0e0;
+  animation: shimmer 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #f0f0f0;
+  }
+  50% {
+    background-color: #e0e0e0;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+
+
